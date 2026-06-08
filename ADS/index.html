@@ -158,6 +158,237 @@ html,body{width:100%;max-width:100%;overflow-x:hidden!important}.app{width:100vw
   margin:0!important;
 }
 
+
+/* ===== TEAM OVERVIEW UPGRADE ===== */
+.chartArea.teamOverview{
+  height:270px!important;
+  display:grid!important;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr))!important;
+  gap:14px!important;
+  padding:14px!important;
+  align-items:stretch!important;
+  justify-content:stretch!important;
+}
+.teamCard{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  padding:14px;
+  cursor:pointer;
+  min-width:0;
+}
+.teamCard:hover{
+  border-color:#2f7cff;
+  background:rgba(35,119,255,.08);
+}
+.teamCardHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+.teamCardHead b{
+  font-size:18px;
+}
+.teamTotal{
+  background:#18283c;
+  border:1px solid #24374e;
+  border-radius:8px;
+  padding:4px 10px;
+  color:#dce8f8;
+}
+.teamStats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-bottom:12px;
+}
+.statBox{
+  background:rgba(0,0,0,.16);
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:9px;
+  padding:9px;
+  text-align:center;
+}
+.statBox span{
+  display:block;
+  color:#9fb1c7;
+  font-size:12px;
+  margin-bottom:5px;
+}
+.statBox strong{
+  font-size:18px;
+}
+.progressLine{
+  height:9px;
+  background:#26364c;
+  border-radius:99px;
+  overflow:hidden;
+  display:flex;
+  margin:10px 0 12px;
+}
+.progressLine .activePart{background:#42d66f;height:100%}
+.progressLine .badPart{background:#ff4d4f;height:100%}
+.miniResponsible{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.miniResponsible span{
+  background:rgba(35,119,255,.12);
+  border:1px solid rgba(35,119,255,.18);
+  color:#cfe2ff;
+  padding:4px 7px;
+  border-radius:7px;
+  font-size:12px;
+  max-width:120px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+
+/* ===== FULL CYCLE DASHBOARD UPGRADE ===== */
+.grid1{
+  grid-template-columns:1.35fr 1fr 1fr!important;
+  align-items:stretch!important;
+}
+.grid2{
+  grid-template-columns:1.15fr 1.1fr 1.1fr!important;
+  align-items:stretch!important;
+}
+.opsGrid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  height:100%;
+}
+.opsCard{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:12px;
+  padding:13px;
+  cursor:pointer;
+}
+.opsCard:hover{border-color:#2f7cff;background:rgba(35,119,255,.08)}
+.opsHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+.opsHead b{font-size:17px}
+.opsTotal{
+  background:#18283c;
+  border:1px solid #24374e;
+  border-radius:8px;
+  padding:3px 9px;
+  color:#dce8f8;
+}
+.opsStats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:7px;
+  margin-bottom:10px;
+}
+.opsStat{
+  background:rgba(0,0,0,.16);
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:8px;
+  padding:8px 4px;
+  text-align:center;
+}
+.opsStat span{
+  display:block;
+  color:#9fb1c7;
+  font-size:11px;
+  margin-bottom:4px;
+}
+.opsStat strong{font-size:17px}
+.opsProgress{
+  height:9px;
+  background:#26364c;
+  border-radius:99px;
+  overflow:hidden;
+  display:flex;
+  margin:9px 0 8px;
+}
+.opsProgress .okPart{height:100%;background:#42d66f}
+.opsProgress .badPart{height:100%;background:#ff4d4f}
+.opsResp{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  margin-top:8px;
+}
+.opsResp span{
+  background:rgba(35,119,255,.12);
+  border:1px solid rgba(35,119,255,.18);
+  color:#cfe2ff;
+  padding:3px 7px;
+  border-radius:7px;
+  font-size:11px;
+  max-width:100px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.statusMatrix{
+  display:grid;
+  gap:10px;
+}
+.statusRow{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:10px;
+  padding:11px;
+  cursor:pointer;
+}
+.statusRow:hover{border-color:#2f7cff;background:rgba(35,119,255,.08)}
+.statusTop{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:8px;
+  font-weight:700;
+}
+.statusMini{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+}
+.statusMini div{
+  background:rgba(0,0,0,.15);
+  border-radius:8px;
+  padding:7px;
+  text-align:center;
+}
+.statusMini span{display:block;font-size:11px;color:#9fb1c7;margin-bottom:4px}
+.workflowGrid{
+  display:grid;
+  gap:8px;
+}
+.workflowItem{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:9px;
+  padding:9px 10px;
+  cursor:pointer;
+}
+.workflowItem:hover{border-color:#2f7cff;background:rgba(35,119,255,.08)}
+.workflowItem b{font-size:14px}
+.workflowItem small{color:#9fb1c7}
+.workflowBadge{
+  background:#18283c;
+  border:1px solid #24374e;
+  border-radius:8px;
+  padding:4px 9px;
+}
+.donutWrap{height:240px!important}
+.card{overflow:hidden}
+
 </style>
 </head>
 <body>
@@ -165,8 +396,8 @@ html,body{width:100%;max-width:100%;overflow-x:hidden!important}.app{width:100vw
 <aside class="side"><div class="logo" onclick="showSection('dashboard')">AD<span>S</span></div><div class="sub">CONTROL CENTER</div><div class="nav"><button class="active" onclick="navClick(this,'dashboard')">🏠 Dashboard</button><button onclick="navClick(this,'accounts')">👥 Account Manager</button><button onclick="navClick(this,'chrome')">🖥 Chrome Inventory</button><button onclick="navClick(this,'cards')">💳 Card Center</button><button onclick="navClick(this,'check')">🔎 Check List</button><button onclick="navClick(this,'settings')">⚙ Settings</button></div><div class="team"><div class="teamHead"><span>ทีม (Team)</span><span class="plus" onclick="openAdd()">+</span></div><div class="rowSide" onclick="setTeam('WIN1')"><span><i class="dot" style="background:#2377ff"></i>WIN1</span><span class="pill" id="sideWin1">0</span></div><div class="rowSide" onclick="setTeam('WIN2')"><span><i class="dot" style="background:#914dff"></i>WIN2</span><span class="pill" id="sideWin2">0</span></div><div class="rowSide" onclick="clearFilters()"><span><i class="dot" style="background:#334155"></i>ทั้งหมด</span><span class="pill" id="sideAll">0</span></div></div><div class="responsibleBox"><div class="responsibleTitle"><span>ผู้รับผิดชอบ</span><span class="pill" id="respTotal">0</span></div><div id="responsibleList"></div></div><div class="logout" onclick="toast('ออกจากระบบแล้ว')">↪ ออกจากระบบ</div></aside>
 <main class="main"><div class="top"><div class="leftTop"><div class="hamb" onclick="toast('เมนูพร้อมใช้งาน')">☰</div><div class="title"><h1 id="pageTitle">Dashboard</h1><p id="pageSub">ระบบจัดการบัญชี ADS / Chrome / บัตร</p></div></div><div class="actions"><input class="input" type="text" value="8 มิถุนายน 2026" readonly><button class="btn" onclick="loadData()">⟳ รีเฟรชข้อมูล</button><div class="bell" onclick="showSection('check')">🔔<span class="badgeN" id="alertCount">0</span></div><div class="admin" onclick="toast('Admin / Super Admin')"><div class="avatar"></div><div><b>Admin</b><br><small>Super Admin</small></div></div></div></div>
 <section class="kpis"><div class="card kpi green" onclick="setStatus('ใช้งาน')"><h3>บัญชีโฆษณาใช้งาน</h3><div class="num" id="kAccActive">0</div><small>จำนวนบัญชีโฆษณาที่ใช้งานได้</small><div class="icon">👤</div></div><div class="card kpi" onclick="setStatus('ไม่ได้ใช้งาน')"><h3>บัญชีโฆษณาไม่ใช้งาน</h3><div class="num" id="kAccInactive">0</div><small>บัญชีที่ต้องตรวจสอบหรือปิดใช้งาน</small><div class="icon">🚫</div></div><div class="card kpi yellow" onclick="showSection('chrome')"><h3 style="color:#facc15">Chrome / AdsPower</h3><div class="num" id="kChrome">0</div><div class="split"><span style="color:#facc15">WIN1: <b style="color:white" id="chromeWin1">0</b></span><span style="color:#facc15">WIN2: <b style="color:white" id="chromeWin2">0</b></span></div><div class="icon">🌐</div></div><div class="card kpi purple" onclick="showSection('cards')"><h3>บัตรทั้งหมด</h3><div class="num" id="kCards">0</div><div class="split"><span id="cardUse">ใช้งาน: 0</span><span id="cardNot">ไม่ใช้: 0</span></div><div class="icon">💳</div></div><div class="card kpi green"><h3>BM ทั้งหมด</h3><div class="num" id="kBm">0</div><small>Business Manager ไม่ซ้ำ</small><div class="icon">🏢</div></div><div class="card kpi" onclick="clearFilters()"><h3>รายการทั้งหมด</h3><div class="num" id="kAll">0</div><small>จำนวนข้อมูลทั้งหมดในระบบ</small><div class="icon">📦</div></div></section>
-<section class="grid1"><div class="card clickable"><h2>สรุปบัญชีโฆษณาแยกตามทีม</h2><div class="legend"><span style="color:#4ade80">━ ใช้งาน</span><span style="color:#ff6b5f">━ ไม่ใช้งาน</span></div><div class="chartArea" id="chart"></div></div><div class="card clickable"><h2>สัดส่วนรายการตามทีม</h2><div class="donutWrap" onclick="clearFilters()"><div class="donut" id="donut" data-label="บัญชี\Aทั้งหมด\A0"></div><div class="donutList"><div><i class="sq" style="background:#2377ff"></i><span>WIN1</span><b id="donutW1">0%</b></div><small id="donutW1Amt">0 บัญชี</small><div><i class="sq" style="background:#914dff"></i><span>WIN2</span><b id="donutW2">0%</b></div><small id="donutW2Amt">0 บัญชี</small><div><i class="sq" style="background:#718096"></i><span>อื่น ๆ</span><b id="donutOther">0%</b></div><small id="donutOtherAmt">0 บัญชี</small></div></div></div><div class="card"><h2>แจ้งเตือน <span class="topRight" onclick="showSection('check')">ดูทั้งหมด</span></h2><div id="alerts"></div></div></section>
-<section class="grid2"><div class="card"><h2>บัญชีที่ต้องตรวจสอบ <span class="topRight" onclick="setStatus('ไม่ได้ใช้งาน')">ดูทั้งหมด</span></h2><div class="tableWrap"><table id="checkTable"></table></div></div><div class="card"><h2>สรุปตามทีม</h2><div id="summary"></div></div><div class="card"><h2>สถานะระบบ</h2><div class="alert" onclick="loadData()"><span><span class="circle grn">✓</span>ซิงค์ Google Sheets</span><b class="greenTxt">ปกติ</b></div><div class="alert"><span><span class="circle grn">✓</span>ระบบบัญชี</span><b class="greenTxt">ปกติ</b></div><div class="alert" onclick="exportCSV()"><span><span class="circle grn">✓</span>Export CSV</span><b class="greenTxt">พร้อมใช้</b></div></div></section>
+<section class="grid1"><div class="card clickable"><h2>ภาพรวมครบวงจรตามทีม</h2><div class="legend"><span style="color:#4ade80">━ ใช้งาน</span><span style="color:#ff6b5f">━ ไม่ใช้งาน</span></div><div class="chartArea" id="chart"></div></div><div class="card clickable"><h2>สัดส่วนทีมและสถานะ</h2><div class="donutWrap" onclick="clearFilters()"><div class="donut" id="donut" data-label="บัญชี\Aทั้งหมด\A0"></div><div class="donutList"><div><i class="sq" style="background:#2377ff"></i><span>WIN1</span><b id="donutW1">0%</b></div><small id="donutW1Amt">0 บัญชี</small><div><i class="sq" style="background:#914dff"></i><span>WIN2</span><b id="donutW2">0%</b></div><small id="donutW2Amt">0 บัญชี</small><div><i class="sq" style="background:#718096"></i><span>อื่น ๆ</span><b id="donutOther">0%</b></div><small id="donutOtherAmt">0 บัญชี</small></div></div></div><div class="card"><h2>แจ้งเตือน <span class="topRight" onclick="showSection('check')">ดูทั้งหมด</span></h2><div id="alerts"></div></div></section>
+<section class="grid2"><div class="card"><h2>บัญชีที่ต้องตรวจสอบ <span class="topRight" onclick="setStatus('ไม่ได้ใช้งาน')">ดูทั้งหมด</span></h2><div class="tableWrap"><table id="checkTable"></table></div></div><div class="card"><h2>Workflow ตรวจสอบ</h2><div id="summary"></div></div><div class="card"><h2>สถานะระบบ</h2><div class="alert" onclick="loadData()"><span><span class="circle grn">✓</span>ซิงค์ Google Sheets</span><b class="greenTxt">ปกติ</b></div><div class="alert"><span><span class="circle grn">✓</span>ระบบบัญชี</span><b class="greenTxt">ปกติ</b></div><div class="alert" onclick="exportCSV()"><span><span class="circle grn">✓</span>Export CSV</span><b class="greenTxt">พร้อมใช้</b></div></div></section>
 <section class="card bigTable" id="accountSection"><div class="filters"><h2 style="margin-right:8px">บัญชีทั้งหมด</h2><input class="input" id="search" placeholder="ค้นหา ผู้รับผิดชอบ, เลขท้ายบัตร, BM, อีเมล, Chrome..." oninput="renderTables()"><select class="select" id="teamFilter" onchange="renderTables()"><option value="">ทุกทีม</option></select><select class="select" id="accFilter" onchange="renderTables()"><option value="">ทุกสถานะบัญชี</option><option>ใช้งาน</option><option>ไม่ได้ใช้งาน</option><option>ยังไม่ได้ใช้</option></select><select class="select" id="cardFilter" onchange="renderTables()"><option value="">ทุกสถานะบัตร</option><option>ใช้งาน</option><option>ไม่ได้ใช้งาน</option><option>ยังไม่ได้ใช้</option></select><select class="select" id="chromeFilter" onchange="renderTables()"><option value="">ทุก Chrome</option></select><button class="btn" onclick="exportCSV()">⇩ ดาวน์โหลด Excel</button><button class="btn primary" onclick="openAdd()">＋ เพิ่มบัญชี</button></div><div class="tableWrap"><table id="mainTable"></table></div><div class="pager" id="pager"></div></section></main></div>
 <div class="modal" id="modal"><div class="box"><h2 id="mTitle">เพิ่มบัญชี</h2><input type="hidden" id="fRow"><input type="hidden" id="fId"><label>ทีม</label><input class="input" id="fTeam"><label>ผู้รับผิดชอบ</label><input class="input" id="fProfile"><label>บัตรชุด</label><input class="input" id="fCardSet"><label>เลขโครม / AdsPower</label><input class="input" id="fChrome"><label>Facebook/Email Login</label><input class="input" id="fEmail"><label>2FA</label><input class="input" id="fTwofa"><label>เมลสำรอง</label><input class="input" id="fBackupMail"><label>BM</label><input class="input" id="fBm"><label>บัญชีโฆษณา</label><input class="input" id="fAds"><label>เลขท้ายบัตร</label><input class="input" id="fCard"><label>สถานะบัญชีโฆษณา</label><select class="select" id="fAcc"><option>ใช้งาน</option><option>ไม่ได้ใช้งาน</option><option>ยังไม่ได้ใช้</option></select><label>สถานะบัญชีเฟส</label><select class="select" id="fFbStatus"><option>ใช้งาน</option><option>ไม่ได้ใช้งาน</option><option>ยังไม่ได้ใช้</option></select><label>สถานะบัตร</label><select class="select" id="fCardStatus"><option>ใช้งาน</option><option>ไม่ได้ใช้งาน</option><option>ยังไม่ได้ใช้</option></select><label>หมายเหตุ</label><input class="input" id="fRemark"><div style="text-align:right;margin-top:14px"><button class="btn" onclick="closeModal()">ยกเลิก</button> <button class="btn primary" onclick="saveItem()">บันทึกกลับชีท</button></div></div></div><div class="toast" id="toast"></div>
 <script>
@@ -186,9 +417,9 @@ function renderResponsibleList(){
  }).join('') + (names.length?`<div class="responsibleItem" onclick="clearResponsible()"><span><i class="dot" style="background:#334155"></i><span class="nameCut">ทั้งหมด</span></span><span class="pill">${data.length}</span></div>`:'');
 }
 function renderKpi(){const all=data.length,active=countBy(data,'acc','ใช้งาน'),inactive=data.filter(x=>x.acc!=='ใช้งาน').length,activeCards=countBy(data,'cardStatus','ใช้งาน'),inactiveCards=data.filter(x=>x.cardStatus!=='ใช้งาน').length,chromes=unique(data.flatMap(x=>String(x.chrome||'').split(',').map(s=>s.trim()))),bms=unique(data.map(x=>x.bm));kAccActive.textContent=active;kAccInactive.textContent=inactive;kChrome.textContent=chromes.length;kCards.textContent=unique(data.map(x=>x.card)).length;kBm.textContent=bms.length;kAll.textContent=all;cardUse.textContent='ใช้งาน: '+activeCards;cardNot.textContent='ไม่ใช้: '+inactiveCards;const w1=data.filter(x=>x.team==='WIN1'),w2=data.filter(x=>x.team==='WIN2');sideWin1.textContent=w1.length;sideWin2.textContent=w2.length;sideAll.textContent=all;chromeWin1.textContent=unique(w1.flatMap(x=>String(x.chrome||'').split(',').map(s=>s.trim()))).length;chromeWin2.textContent=unique(w2.flatMap(x=>String(x.chrome||'').split(',').map(s=>s.trim()))).length;const p1=all?w1.length/all*100:0,p2=all?w2.length/all*100:0,po=Math.max(0,100-p1-p2);donutW1.textContent=p1.toFixed(1)+'%';donutW2.textContent=p2.toFixed(1)+'%';donutOther.textContent=po.toFixed(1)+'%';donutW1Amt.textContent=w1.length+' บัญชี';donutW2Amt.textContent=w2.length+' บัญชี';donutOtherAmt.textContent=(all-w1.length-w2.length)+' บัญชี';donut.style.background=`conic-gradient(#2377ff 0 ${p1}%,#914dff ${p1}% ${p1+p2}%,#718096 ${p1+p2}% 100%)`;donut.setAttribute('data-label',`บัญชี\nทั้งหมด\n${all}`);alertCount.textContent=inactive}
-function renderChart(){const teams=unique(data.map(x=>x.team)).slice(0,6);const max=Math.max(1,...teams.map(t=>data.filter(x=>x.team===t).length));chart.innerHTML=teams.map(t=>{const arr=data.filter(x=>x.team===t),act=arr.filter(x=>x.acc==='ใช้งาน').length,bad=arr.length-act;return `<div class="day" onclick="setTeam('${t}')"><div style="font-weight:700;color:#dfeaff;margin-bottom:8px">${t}</div><div class="bars"><div style="text-align:center"><div class="b" title="ใช้งาน ${act}" style="height:${Math.max(16,act/max*150)}px;background:#42d66f;box-shadow:0 0 14px rgba(66,214,111,.35)"></div><small style="display:block;margin-top:6px;color:#9ff5bd">${act}</small></div><div style="text-align:center"><div class="b" title="ไม่ใช้งาน ${bad}" style="height:${Math.max(16,bad/max*150)}px;background:#ff4d4f;box-shadow:0 0 14px rgba(255,77,79,.35)"></div><small style="display:block;margin-top:6px;color:#ffb1ad">${bad}</small></div></div><div class="lbl">รวม ${arr.length}</div></div>`}).join('')}
+function renderChart(){chart.classList.add('teamOverview');chart.classList.add('opsGrid');const teams=unique(data.map(x=>x.team)).slice(0,4);chart.innerHTML=teams.map(t=>{const arr=data.filter(x=>x.team===t);const accOk=arr.filter(x=>x.acc==='ใช้งาน').length;const accBad=arr.length-accOk;const fbOk=arr.filter(x=>x.fbStatus==='ใช้งาน').length;const cardOk=arr.filter(x=>x.cardStatus==='ใช้งาน').length;const chromeCount=unique(arr.flatMap(x=>String(x.chrome||'').split(',').map(s=>s.trim()))).length;const resp=unique(arr.map(x=>x.profile)).slice(0,5);const pct=arr.length?Math.round(accOk/arr.length*100):0;return `<div class="opsCard" onclick="setTeam('${t}')"><div class="opsHead"><b>${t}</b><span class="opsTotal">รวม ${arr.length}</span></div><div class="opsStats"><div class="opsStat"><span>บัญชีใช้</span><strong style="color:#9ff5bd">${accOk}</strong></div><div class="opsStat"><span>ต้องเช็ก</span><strong style="color:#ffb1ad">${accBad}</strong></div><div class="opsStat"><span>เฟสใช้</span><strong style="color:#c4b5fd">${fbOk}</strong></div><div class="opsStat"><span>Chrome</span><strong style="color:#7dd3fc">${chromeCount}</strong></div></div><div class="opsProgress"><div class="okPart" style="width:${pct}%"></div><div class="badPart" style="width:${100-pct}%"></div></div><div style="display:flex;justify-content:space-between;color:#9fb1c7;font-size:12px"><span>บัตรใช้ ${cardOk}</span><span>${pct}% ใช้งาน</span></div><div class="opsResp">${resp.map(n=>`<span>${n}</span>`).join('')}</div></div>`}).join('')}
 function renderAlerts(){const inactive=data.filter(x=>x.acc!=='ใช้งาน').slice(0,5);alerts.innerHTML=inactive.length?inactive.map(x=>`<div class="alert" onclick="search.value='${x.card||x.profile}';renderTables();jumpTable()"><span><span class="circle red">!</span><b class="redTxt">${x.card||'-'} ${x.profile||''} ไม่ใช้งาน</b><br><small>BM: ${x.bm||'-'} | Chrome: ${x.chrome||'-'}</small></span><span>เช็ก</span></div>`).join(''):`<div class="alert" onclick="loadData()"><span><span class="circle grn">✓</span><b class="greenTxt">ไม่มีรายการผิดปกติ</b><br><small>ข้อมูลล่าสุดจาก Google Sheets</small></span><span>Now</span></div>`}
-function renderTables(){renderKpi();const rows=filtered();if((currentPage-1)*pageSize>=rows.length)currentPage=1;const check=data.filter(x=>x.acc!=='ใช้งาน'||x.cardStatus!=='ใช้งาน').slice(0,6);checkTable.innerHTML='<tr><th>#</th><th>เลขท้ายบัตร</th><th>ผู้รับผิดชอบ</th><th>BM</th><th>บัญชี</th><th>บัตร</th></tr>'+check.map((x,i)=>`<tr onclick="openEdit(${x.id})"><td>${i+1}</td><td>${x.card}</td><td>${x.profile}</td><td>${x.bm}</td><td>${badge(x.acc)}</td><td>${badge(x.cardStatus)}</td></tr>`).join('');const teams=unique(data.map(x=>x.team));summary.innerHTML=teams.slice(0,5).map(t=>{const arr=data.filter(x=>x.team===t),act=arr.filter(x=>x.acc==='ใช้งาน').length,bad=arr.length-act,p=arr.length?act/arr.length*100:0;return `<div class="miniRow" onclick="setTeam('${t}')"><b style="color:${t==='WIN1'?'#2f8cff':t==='WIN2'?'#a56bff':'#ddd'}">${t}</b><span>ทั้งหมด ${arr.length}</span><span>ใช้ ${act}</span><span>ไม่ใช้ ${bad}</span><div class="miniLine"><span style="width:${p}%;background:${t==='WIN2'?'#914dff':'#2377ff'}"></span></div></div>`}).join('');const pageRows=rows.slice((currentPage-1)*pageSize,currentPage*pageSize);mainTable.innerHTML='<tr><th>#</th><th>ทีม</th><th>ผู้รับผิดชอบ</th><th>บัตรชุด</th><th>Chrome</th><th>BM</th><th>บัญชีโฆษณา</th><th>เลขท้ายบัตร</th><th>สถานะบัญชีโฆษณา</th><th>สถานะบัญชีเฟส</th><th>สถานะบัตร</th><th>จัดการ</th></tr>'+pageRows.map((x,i)=>`<tr onclick="openEdit(${x.id})" title="คลิกเพื่อดูรายละเอียดทั้งหมด"><td>${(currentPage-1)*pageSize+i+1}</td><td>${x.team}</td><td>${x.profile}</td><td>${x.cardSet}</td><td>🌐 ${x.chrome}</td><td>${x.bm}</td><td>${x.ads}</td><td>${x.card}</td><td>${badge(x.acc)}</td><td>${badge(x.fbStatus)}</td><td>${badge(x.cardStatus)}</td><td class="actionCell"><button class="editBtn" title="แก้ไข" onclick="event.stopPropagation();openEdit(${x.id})">✎</button><button class="delBtn" title="ลบ" onclick="event.stopPropagation();delItem(${x.id})">🗑</button><button class="moreBtn" title="รายละเอียด" onclick="event.stopPropagation();showDetail(${x.id})">...</button></td></tr>`).join('');const pages=Math.max(1,Math.ceil(rows.length/pageSize));pager.innerHTML=`<span>แสดง ${pageRows.length} จาก ${rows.length} รายการ</span>`+Array.from({length:pages},(_,i)=>`<button class="pageBtn ${currentPage==i+1?'active':''}" onclick="currentPage=${i+1};renderTables()">${i+1}</button>`).join('')+`<select class="select" onchange="pageSize=Number(this.value);currentPage=1;renderTables()"><option ${pageSize==10?'selected':''}>10</option><option ${pageSize==20?'selected':''}>20</option><option ${pageSize==50?'selected':''}>50</option></select>`}
+function renderTables(){renderKpi();const rows=filtered();if((currentPage-1)*pageSize>=rows.length)currentPage=1;const check=data.filter(x=>x.acc!=='ใช้งาน'||x.cardStatus!=='ใช้งาน').slice(0,6);checkTable.innerHTML='<tr><th>#</th><th>เลขท้ายบัตร</th><th>ผู้รับผิดชอบ</th><th>BM</th><th>บัญชี</th><th>บัตร</th></tr>'+check.map((x,i)=>`<tr onclick="openEdit(${x.id})"><td>${i+1}</td><td>${x.card}</td><td>${x.profile}</td><td>${x.bm}</td><td>${badge(x.acc)}</td><td>${badge(x.cardStatus)}</td></tr>`).join('');const teams=unique(data.map(x=>x.team));summary.innerHTML=`<div class="workflowGrid"><div class="workflowItem" onclick="setStatus('ไม่ได้ใช้งาน')"><div><b>บัญชีโฆษณาต้องตรวจสอบ</b><br><small>สถานะบัญชีโฆษณาไม่ใช้งาน</small></div><span class="workflowBadge">${data.filter(x=>x.acc!=='ใช้งาน').length}</span></div><div class="workflowItem" onclick="cardFilter.value='ไม่ได้ใช้งาน';renderTables();jumpTable()"><div><b>บัตรไม่พร้อมใช้งาน</b><br><small>สถานะบัตรไม่ได้ใช้งาน</small></div><span class="workflowBadge">${data.filter(x=>x.cardStatus!=='ใช้งาน').length}</span></div><div class="workflowItem" onclick="toast('ตรวจสอบ Chrome ตามทีม')"><div><b>Chrome / AdsPower</b><br><small>จำนวน Chrome ไม่ซ้ำทั้งหมด</small></div><span class="workflowBadge">${unique(data.flatMap(x=>String(x.chrome||'').split(',').map(s=>s.trim()))).length}</span></div><div class="workflowItem" onclick="clearFilters()"><div><b>ผู้รับผิดชอบทั้งหมด</b><br><small>กดรายชื่อด้านซ้ายเพื่อกรอง</small></div><span class="workflowBadge">${unique(data.map(x=>x.profile)).length}</span></div></div>`;const pageRows=rows.slice((currentPage-1)*pageSize,currentPage*pageSize);mainTable.innerHTML='<tr><th>#</th><th>ทีม</th><th>ผู้รับผิดชอบ</th><th>บัตรชุด</th><th>Chrome</th><th>BM</th><th>บัญชีโฆษณา</th><th>เลขท้ายบัตร</th><th>สถานะบัญชีโฆษณา</th><th>สถานะบัญชีเฟส</th><th>สถานะบัตร</th><th>จัดการ</th></tr>'+pageRows.map((x,i)=>`<tr onclick="openEdit(${x.id})" title="คลิกเพื่อดูรายละเอียดทั้งหมด"><td>${(currentPage-1)*pageSize+i+1}</td><td>${x.team}</td><td>${x.profile}</td><td>${x.cardSet}</td><td>🌐 ${x.chrome}</td><td>${x.bm}</td><td>${x.ads}</td><td>${x.card}</td><td>${badge(x.acc)}</td><td>${badge(x.fbStatus)}</td><td>${badge(x.cardStatus)}</td><td class="actionCell"><button class="editBtn" title="แก้ไข" onclick="event.stopPropagation();openEdit(${x.id})">✎</button><button class="delBtn" title="ลบ" onclick="event.stopPropagation();delItem(${x.id})">🗑</button><button class="moreBtn" title="รายละเอียด" onclick="event.stopPropagation();showDetail(${x.id})">...</button></td></tr>`).join('');const pages=Math.max(1,Math.ceil(rows.length/pageSize));pager.innerHTML=`<span>แสดง ${pageRows.length} จาก ${rows.length} รายการ</span>`+Array.from({length:pages},(_,i)=>`<button class="pageBtn ${currentPage==i+1?'active':''}" onclick="currentPage=${i+1};renderTables()">${i+1}</button>`).join('')+`<select class="select" onchange="pageSize=Number(this.value);currentPage=1;renderTables()"><option ${pageSize==10?'selected':''}>10</option><option ${pageSize==20?'selected':''}>20</option><option ${pageSize==50?'selected':''}>50</option></select>`}
 function renderAll(){renderResponsibleList();renderChart();renderAlerts();renderTables()}function navClick(btn,section){document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');showSection(section)}function showSection(section){const titles={dashboard:['Dashboard','ระบบจัดการบัญชี ADS / Chrome / บัตร'],accounts:['Account Manager','จัดการบัญชีทั้งหมด'],chrome:['Chrome Inventory','ตรวจสอบ Chrome / AdsPower'],cards:['Card Center','ตรวจสอบบัตรและสถานะบัตร'],check:['Check List','บัญชีที่ต้องตรวจสอบ'],settings:['Settings','ตั้งค่าระบบ']};pageTitle.textContent=titles[section][0];pageSub.textContent=titles[section][1];if(section==='dashboard')window.scrollTo({top:0,behavior:'smooth'});if(['accounts','cards','chrome','check'].includes(section))jumpTable()}function jumpTable(){accountSection.scrollIntoView({behavior:'smooth'})}function setTeam(t){teamFilter.value=t;currentPage=1;renderTables();jumpTable();toast('กรองทีม '+t)}function setStatus(s){accFilter.value=s;currentPage=1;renderTables();jumpTable();toast('กรองสถานะ '+s)}function clearFilters(){responsibleFilter='';search.value='';teamFilter.value='';accFilter.value='';cardFilter.value='';chromeFilter.value='';currentPage=1;renderTables();jumpTable();toast('ล้างตัวกรองแล้ว')}
 function setResponsible(name){responsibleFilter=name;search.value='';currentPage=1;renderAll();jumpTable();toast('กรองผู้รับผิดชอบ '+name)}function clearResponsible(){responsibleFilter='';currentPage=1;renderAll();jumpTable();toast('แสดงผู้รับผิดชอบทั้งหมด')}function openAdd(){mTitle.textContent='เพิ่มบัญชี';['fRow','fId','fProfile','fCardSet','fChrome','fEmail','fTwofa','fBackupMail','fBm','fAds','fCard','fRemark'].forEach(id=>document.getElementById(id).value='');fTeam.value='WIN1';fAcc.value='ใช้งาน';fFbStatus.value='ใช้งาน';fCardStatus.value='ใช้งาน';modal.classList.add('open')}function openEdit(id){let x=data.find(a=>a.id==id);mTitle.textContent='แก้ไขบัญชี';fRow.value=x.rowNumber||'';fId.value=x.id;fTeam.value=x.team;fProfile.value=x.profile;fCardSet.value=x.cardSet;fChrome.value=x.chrome;fEmail.value=x.email;fTwofa.value=x.twofa;fBackupMail.value=x.backupMail;fBm.value=x.bm;fAds.value=x.ads;fCard.value=x.card;fAcc.value=x.acc||'ใช้งาน';fFbStatus.value=x.fbStatus||'ใช้งาน';fCardStatus.value=x.cardStatus||'ใช้งาน';fRemark.value=x.remark||'';modal.classList.add('open')}function closeModal(){modal.classList.remove('open')}
 async function saveItem(){const obj={team:fTeam.value,profile:fProfile.value,cardSet:fCardSet.value,chrome:fChrome.value,email:fEmail.value,twofa:fTwofa.value,backupMail:fBackupMail.value,bm:fBm.value,ads:fAds.value,card:fCard.value,acc:fAcc.value,fbStatus:fFbStatus.value,cardStatus:fCardStatus.value,remark:fRemark.value};const payload={};payload[findHeader(MAP.team)]=obj.team;payload[findHeader(MAP.profile)]=obj.profile;payload[findHeader(MAP.cardSet)]=obj.cardSet;payload[findHeader(MAP.chrome)]=obj.chrome;payload[findHeader(MAP.email)]=obj.email;payload[findHeader(MAP.twofa)]=obj.twofa;payload[findHeader(MAP.backupMail)]=obj.backupMail;payload[findHeader(MAP.bm)]=obj.bm;payload[findHeader(MAP.ads)]=obj.ads;payload[findHeader(MAP.card)]=obj.card;payload[findHeader(MAP.acc)]=obj.acc;payload[findHeader(MAP.fbStatus)]=obj.fbStatus;payload[findHeader(MAP.cardStatus)]=obj.cardStatus;payload[findHeader(MAP.remark)]=obj.remark;const body=fRow.value?{action:'updateData',rowNumber:Number(fRow.value),updates:payload}:{action:'addData',data:payload};toast('กำลังบันทึกกลับ Google Sheets...');await fetch(GOOGLE_SCRIPT_URL,{method:'POST',body:JSON.stringify(body)});closeModal();await loadData()}async function delItem(id){let x=data.find(a=>a.id==id);if(!confirm('ลบรายการนี้ใช่ไหม?'))return;if(x.rowNumber){await fetch(GOOGLE_SCRIPT_URL,{method:'POST',body:JSON.stringify({action:'deleteData',rowNumber:x.rowNumber})});await loadData()}}function showDetail(id){let x=data.find(a=>a.id==id);alert(`รายละเอียดบัญชี\nทีม: ${x.team}\nผู้รับผิดชอบ: ${x.profile}\nChrome: ${x.chrome}\nBM: ${x.bm}\nบัญชีโฆษณา: ${x.ads}\nเลขท้ายบัตร: ${x.card}\nสถานะบัญชีโฆษณา: ${x.acc}\nสถานะบัญชีเฟส: ${x.fbStatus}\nสถานะบัตร: ${x.cardStatus}`)}function exportCSV(){let head=['ทีม','ผู้รับผิดชอบ','บัตรชุด','เลขโครม','Facebook/Email Login','2FA','เมลสำรอง','BM','บัญชีโฆษณา','เลขท้ายบัตร','สถานะบัญชีโฆษณา','สถานะบัญชีเฟส','สถานะบัตร','หมายเหตุ'],rows=filtered().map(x=>[x.team,x.profile,x.cardSet,x.chrome,x.email,x.twofa,x.backupMail,x.bm,x.ads,x.card,x.acc,x.fbStatus,x.cardStatus,x.remark]);let csv='\ufeff'+[head,...rows].map(r=>r.map(v=>`"${String(v??'').replace(/"/g,'""')}"`).join(',')).join('\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='ADS_Accounts_Export.csv';a.click();toast('ดาวน์โหลด Excel แล้ว')}function toast(t){let e=document.getElementById('toast');e.textContent=t;e.style.display='block';setTimeout(()=>e.style.display='none',2200)}loadData();
